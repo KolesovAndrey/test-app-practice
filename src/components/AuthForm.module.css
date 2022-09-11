@@ -1,0 +1,43 @@
+.auth-form {
+  padding: 20px;
+
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.control {
+  margin-bottom: 10px;
+}
+
+.control label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.control input {
+  padding: 5px;
+  width: 100%;
+
+  font-size: 18px;
+
+  border-radius: 5px;
+  border: none;
+}
+
+.auth-form button {
+  padding: 10px 30px;
+  cursor: pointer;
+
+  font-weight: 700;
+  color: #fff;
+
+  background-color: #3f8df3;
+  border-radius: 10px;
+  border: 1px solid #3f8df3;
+}
+
+.auth-form button:hover {
+  background-color: #49b3ff;
+  border-color: #49b3ff;
+}

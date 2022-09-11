@@ -1,6 +1,11 @@
-import { useRef } from 'react';
+import { useRef, useContext } from 'react';
+import AuthContext from '../store/auth-context';
+
+import classes from './AuthForm.module.css';
 
 const AuthForm = () => {
+  const authCtx = useContext(AuthContext);
+
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
 
@@ -20,16 +25,17 @@ const AuthForm = () => {
 
     if (emailValid(enteredEmail) && passwordValid(enteredPassword)) {
       console.log('email and password is valid!');
+      authCtx.loginHandler();
     }
   };
 
   return (
-    <form onSubmit={submitHandler}>
-      <div>
+    <form className={classes['auth-form']} onSubmit={submitHandler}>
+      <div className={classes.control}>
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" ref={emailInputRef} />
       </div>
-      <div>
+      <div className={classes.control}>
         <label htmlFor="password">Password:</label>
         <input type="password" id="password" ref={passwordInputRef} />
       </div>

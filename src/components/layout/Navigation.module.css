@@ -4,6 +4,10 @@
   background-color: #ccc;
 }
 
+.header .header-logo {
+  font-size: 24px;
+}
+
 .header-content {
   display: flex;
   align-items: center;
