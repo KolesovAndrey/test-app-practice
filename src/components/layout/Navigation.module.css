@@ -1,0 +1,29 @@
+.header {
+  padding: 0 5%;
+
+  background-color: #ccc;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul {
+  display: flex;
+
+  list-style: none;
+  gap: 15px;
+}
+
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: #3f8df3;
+}
